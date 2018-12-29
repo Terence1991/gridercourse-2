@@ -4,8 +4,23 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   return(
-<div>Hi There!</div>
-  );
+ <div className='ui container comments'>
+ <div className='comment'>
+ <a href='/' classname='avatar'>
+  <img alt='avatar'/>
+ </a>
+  <div className='content'>
+  <a href='/'clasName='author'>
+   sam 
+  </a>
+  <div className='meta-data'>
+  <span className='date'> today at 10:00 pm</span>
+  </div>
+  <div clasName='text'>My name is Terry</div>
+   </div>
+  </div>
+ </div>
+);
 }
 
 ReactDOM.render(<App/>, document.querySelector('#root'))
